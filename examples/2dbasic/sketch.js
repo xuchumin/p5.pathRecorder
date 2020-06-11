@@ -1,14 +1,14 @@
-let recorder; //make a variable for the path recoder class to exist in
+let recorder; //变量用于接收pathRecorder实例
 
-let pathToggle = true;
+let pathToggle = true;//显示路径
 
 
 function setup() {
   createCanvas(800, 800);
 
-  recorder = new p5pathRecorder(); //instantiate a new path recorder
-  recorder.load('myPaths.json') //load some existing paths from a file
-  // console.log(recorder.buffer) //see the paths buffer
+  recorder = new p5pathRecorder(); //创建实例path recorder
+  recorder.load('myPaths.json') //载入外部文件
+  // console.log(recorder.buffer) //查看buffer缓存
 
 }
 
@@ -24,7 +24,7 @@ function draw() {
 
 
   if(mouseIsPressed){
-    recorder.recordFrame(mouseX,mouseY) //record a frame to the buffer
+    recorder.recordFrame(mouseX,mouseY) //往buffer区加新的点
   }else{
     //dont draw the ellipse while recording.
     ellipse(pos.x, pos.y, 100, 100)
