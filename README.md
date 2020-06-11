@@ -47,7 +47,7 @@ Drawings by [Sara Fowler](http://saradellefowler.com)
 
 #### p5pathRecorder class
 ###### p5pathRecorder()
-instantiate a new path recorder
+实例化一个新的path recorder
 ```javascript
 let recorder;
 
@@ -57,7 +57,7 @@ function setup() {
 ```
 #### .recordFrame()
 ###### .recordFrame(x,y,[z])
-records a frame of location data to the internal buffer
+将一帧位置数据记录到内部缓冲区
 ```javascript
 let recorder;
 
